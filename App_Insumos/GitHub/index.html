@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administración de Insumos</title>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f5f6f5;font:15px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#17201b}
+.c{background:#fff;border:1px solid #e3e7e4;border-radius:10px;padding:28px;max-width:380px;width:90%;text-align:center}
+h1{font-size:19px;margin:0 0 6px}p{color:#4a554e;font-size:14px}
+a{display:block;margin-top:16px;background:#1a6a40;color:#fff;text-decoration:none;border-radius:7px;padding:12px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="c">
+  <h1>Administración de Insumos</h1>
+  <p>Rural Bioenergía S.A. · Bajas y recepción de compras</p>
+  <a id="go" href="#">Abrir la aplicación</a>
+</div>
+<script>
+// Pegá acá el enlace /exec de la implementación de Apps Script (no es secreto: el token de Estansys queda en Apps Script).
+var APP_URL = 'PEGAR_AQUI_EL_LINK_EXEC';
+document.getElementById('go').href = APP_URL;
+if (/^https:\/\/script\.google\.com\/macros\/s\/.+\/exec$/.test(APP_URL)) location.replace(APP_URL);
+</script>
+</body>
+</html>
